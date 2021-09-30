@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--background-color);
+  border-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__container--left {
+  margin-right: 70px;
+}
+.logo-white {
+  color: white;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.address-list__address {
+  margin-bottom: 9px;
+  & > .link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__container--right {
+  margin-right: 93px;
+  width: 206px;
+  height: 80px;
+  align-items: baseline;
+}
+.footer__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+}
+.icon-list {
+  display: flex;
+  width: 206px;
+  height: 44px;
+}
+.icon-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-list__link {
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--transition-cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.icon-list__icon {
+  fill: white;
+  transition: fill 250ms var(--transition-cubic);
+}
+
+.footer-subscribe__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-subscribe__field {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-right: 12px;
+  outline: none;
+  color: white;
+}
+
+.footer-subscribe__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.06em;
+  color: white;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-subscribe__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  margin-left: 10px;
+}
