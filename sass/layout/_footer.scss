@@ -7,11 +7,33 @@
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
+
 .footer__container--left {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    margin-right: 70px;
+    text-align: left;
+  }
 }
+
 .logo-white {
   color: white;
 }
@@ -39,10 +61,17 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__container--right {
-  margin-right: 93px;
-  width: 206px;
-  height: 80px;
-  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    width: 206px;
+    height: 80px;
+    align-items: baseline;
+    text-align: start;
+  }
 }
 .footer__title {
   font-style: normal;
@@ -53,6 +82,9 @@
   text-transform: uppercase;
   color: white;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .icon-list {
   display: flex;
@@ -82,10 +114,26 @@
   transition: fill 250ms var(--transition-cubic);
 }
 
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+
 .footer-subscribe__form {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
 }
 
 .footer-subscribe__field {
@@ -97,6 +145,7 @@
   border-radius: 4px;
   padding-left: 10px;
   margin-right: 12px;
+  margin-bottom: 20px;
   outline: none;
   color: white;
 }
